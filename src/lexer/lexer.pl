@@ -55,7 +55,7 @@ lexer_symbol(C, _, _) :-
     string_chars(Str, [C]),
     raise_lexer_error("Caractere inválido encontrado", Str).
 
-% NÚMEROS — equivalente ao Haskell
+% NÚMEROS INTEIROS
 
 lexer_num(Input, [Tok|RestTokens]) :-
     span_digits(Input, IntDigits, Rest),
@@ -99,7 +99,7 @@ lexer_real_frac(IntDigits, AfterDot, Tok, Remaining) :-
         Remaining = Rest
     ).
 
-% SPAN DIGITS — equivalente ao span Haskell
+% SPAN DIGITS 
 
 
 span_digits([], [], []).
