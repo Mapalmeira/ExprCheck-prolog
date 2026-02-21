@@ -2,6 +2,10 @@
 
 # Validador e Avaliador Léxico-Sintático de Expressões Matemáticas
 
+![Language](https://img.shields.io/badge/Language-Prolog-f28c28?style=for-the-badge&logo=prolog)
+![Paradigm](https://img.shields.io/badge/Paradigm-Lógico-5a3ea1?style=for-the-badge)
+![Institution](https://img.shields.io/badge/Institution-UFCG-009639?style=for-the-badge)
+
 <p align="center"> <b>Projeto desenvolvido para a disciplina de Paradigmas de Linguagens de Programação.</b> </p> </div>
 <p align="center">
   <a href="docs/readme_us.md">Read in English</a>
@@ -133,4 +137,5 @@ Execute a validação de uma expressão:
 - [Isadora Beatriz Lucena de Medeiros](https://github.com/isadoralucena)
 - [João Henrique Silva Lima](https://github.com/limajoaohs)
 - [Matheus Palmeira Leite Rocha](https://github.com/Mapalmeira)
+
 
