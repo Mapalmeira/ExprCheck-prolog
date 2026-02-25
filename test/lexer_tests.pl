@@ -68,7 +68,6 @@ invalid_input("14 : 15", lexer_error("Caractere inválido", ":")).
 invalid_input("16 _ 17", lexer_error("Caractere inválido", "_")).
 invalid_input("18 ` 19", lexer_error("Caractere inválido", "`")).
 
-% Predicados auxiliares de teste
 valid_input_test(Input, Expected, Result) :- lexer:lexer_string(Input, Tokens),
     assert_equals(Expected, Tokens, Result).
 
@@ -79,7 +78,6 @@ invalid_input_test(Input, ExpectedError, Result) :-
         Result
     ).
 
-% Geração dos testes
 test(Name, lexer_tests:valid_input_test(Input, Expected)) :-
     valid_input(Input, Expected),
     format(atom(Name), "teste (entrada válida): ~q", [Input]).
