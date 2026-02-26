@@ -3,6 +3,7 @@
     lexer_string/2,
     show_lexer_error/2
 ]).
+:- encoding(utf8).
 :- multifile prolog:message//1.
 
 % Erro léxico
