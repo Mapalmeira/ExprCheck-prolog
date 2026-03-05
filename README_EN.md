@@ -111,7 +111,7 @@ The system uses **SWI-Prolog**. In order for the modules to be loaded correctly,
 Load the project's main file:
 
 ```bash
-?- swipl main.pl
+swipl main.pl
 ```
 
 The interactive menu will start. Follow the prompts on the screen to validate the expressions:

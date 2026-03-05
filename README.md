@@ -111,7 +111,7 @@ O sistema utiliza o **SWI-Prolog**. Para que os módulos sejam carregados corret
 Carregue o arquivo principal do projeto:
 
 ```bash
-?- swipl main.pl
+swipl main.pl
 ```
 
 O menu interativo será iniciado. Siga os prompts na tela para validar as expressões:
