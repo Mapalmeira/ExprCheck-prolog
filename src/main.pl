@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :- module(main, []).
 :- use_module(lexer/lexer).
 :- use_module(lexer/token).
@@ -73,3 +74,17 @@ prompt(Message, Input) :-
     write(Message),
     flush_output,
     read_line_to_string(user_input, Input).
+=======
+:- use_module(lexer/token).
+
+main :-
+    show_token(tok_int(42), T1),
+    show_token(tok_plus, T2),
+    show_token(tok_real(3.14), T3),
+    write(T1),
+    write(T2),
+    writeln(T3),
+    halt.
+
+:- initialization(main).
+>>>>>>> 160932cefa91ecf5f61b1d31aa16177f4a29de7d

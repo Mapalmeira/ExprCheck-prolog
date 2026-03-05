@@ -2,8 +2,11 @@
 
 # Validador e Avaliador Léxico-Sintático de Expressões Matemáticas
 
+<<<<<<< HEAD
 [Read in English](README_EN.md)
 
+=======
+>>>>>>> 160932cefa91ecf5f61b1d31aa16177f4a29de7d
 ![Language](https://img.shields.io/badge/Language-Prolog-f28c28?style=for-the-badge&logo=prolog)
 ![Paradigm](https://img.shields.io/badge/Paradigm-Logical-5a3ea1?style=for-the-badge)
 ![Institution](https://img.shields.io/badge/Institution-UFCG-009639?style=for-the-badge)
@@ -18,8 +21,14 @@
 
 Este projeto implementa um analisador capaz de validar e avaliar expressões matemáticas sob as perspectivas léxica e sintática, utilizando Prolog como linguagem de implementação.
 
+<<<<<<< HEAD
 A proposta do trabalho é modelar formalmente uma Gramática Livre de Contexto (GLC) e implementá-la por meio de regras declarativas, explorando os fundamentos do paradigma de Programação em Lógica. O sistema recebe uma expressão como entrada, verifica se ela pertence à linguagem definida e, sendo válida, realiza sua avaliação respeitando precedência e associatividade dos operadores.A abordagem adotada aproveita a natureza declarativa do Prolog, onde a própria estrutura das regras representa diretamente a gramática da linguagem.
 
+=======
+A proposta do trabalho é modelar formalmente uma Gramática Livre de Contexto (GLC) e implementá-la por meio de regras declarativas, explorando os fundamentos do paradigma de Programação em Lógica. O sistema recebe uma expressão como entrada, verifica se ela pertence à linguagem definida e, sendo válida, realiza sua avaliação respeitando precedência e associatividade dos operadores.
+
+A abordagem adotada aproveita a natureza declarativa do Prolog, onde a própria estrutura das regras representa diretamente a gramática da linguagem.
+>>>>>>> 160932cefa91ecf5f61b1d31aa16177f4a29de7d
 ---
 
 ## 2. Especificação Técnica
@@ -123,7 +132,11 @@ Carregue o arquivo principal do projeto:
 Execute a validação de uma expressão:
 
 ```bash
+<<<<<<< HEAD
 ?- Digite a expressão a validar: (1 + 2) * 3 ^ 2
+=======
+?- validar("1 + 2 * 3", Resultado).
+>>>>>>> 160932cefa91ecf5f61b1d31aa16177f4a29de7d
 ```
 
 ---
@@ -139,4 +152,7 @@ Execute a validação de uma expressão:
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 160932cefa91ecf5f61b1d31aa16177f4a29de7d
