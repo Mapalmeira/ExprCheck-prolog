@@ -1,6 +1,7 @@
 :- module(main, []).
 :- use_module(lexer/lexer).
 :- use_module(lexer/token).
+:- use_module(parser/parser).
 
 :- encoding(utf8).
 :- initialization(main).
@@ -28,8 +29,8 @@ choose_mode(Expr) :-
 
 execute_mode("A", Expr) :-
     run_lexical(Expr).
-execute_mode("B", _) :-
-    writeln("\nTODO: Validação sintática ainda não implementada.").
+execute_mode("B", Expr) :-
+    run_syntactic(Expr).
 execute_mode(_, _) :-
     writeln("\nOpção inválida.").
 
@@ -52,6 +53,20 @@ run_lexical(Expr) :-
         )
     ).
 
+run_syntactic(Expr) :-
+    writeln("\n[Validação Sintática]"),
+    catch(
+        ( once(lexer_string(Expr, Tokens)),
+          once(parse(Tokens, AST)),
+          writeln("VÁLIDO - Árvore Sintática (AST)"),
+          writeln(AST)
+        ),
+        Error,
+        ( writeln("INVÁLIDO - Erro"),
+          print_error(Error)
+        )
+    ).
+
 print_tokens_tree([]).
 print_tokens_tree([Last]) :-
     show_token(Last, Text),
@@ -66,7 +81,7 @@ print_error(Error) :-
 
 print_header :-
     writeln("========================================================"),
-    writeln("              === Bem-vindo ao ExprCheck ==="),
+    writeln("            === Bem-vindo ao ExprCheck ==="),
     writeln("========================================================").
 
 prompt(Message, Input) :-
