@@ -143,6 +143,13 @@ Run the lexer tests with the command:
 ```bash
 swipl -g "run_parser_tests, halt" test/lexer_tests.pl
 ```
+
+Run all tests with the command:
+
+```bash
+swipl -g "run_all_tests, halt" test/run_all_tests.pl
+```
+
 ---
 
 ## 5. Authors

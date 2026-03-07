@@ -148,6 +148,11 @@ Execute os testes do lexer com o comando:
 swipl -g "run_parser_tests, halt" test/lexer_tests.pl
 ```
 
+Execute todos os testes com um único comando:
+
+```bash
+swipl -g "run_all_tests, halt" test/run_all_tests.pl
+```
 
 ---
 
