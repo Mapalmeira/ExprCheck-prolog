@@ -132,12 +132,17 @@ Escolha (A/B): B
 **2. Test Mode**  
 It is also possible to run the automated project tests, located in the test folder.
 
-Run the tests with the command:
+Run the parser tests with the command:
 
 ```bash
 swipl -g "run_parser_tests, halt" test/parser_tests.pl
 ```
 
+Run the lexer tests with the command:
+
+```bash
+swipl -g "run_parser_tests, halt" test/lexer_tests.pl
+```
 ---
 
 ## 5. Authors

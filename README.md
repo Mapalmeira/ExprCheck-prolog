@@ -134,10 +134,18 @@ Escolha (A/B): B
 
 Também é possível executar os **testes automatizados do projeto**, presentes na pasta `test`.
 
-Execute os testes com o comando:
+**Execute todos os comandos a partir da raiz do projeto.**
+
+Execute os testes do parser com o comando:
 
 ```bash
 swipl -g "run_parser_tests, halt" test/parser_tests.pl
+```
+
+Execute os testes do lexer com o comando:
+
+```bash
+swipl -g "run_parser_tests, halt" test/lexer_tests.pl
 ```
 
 
