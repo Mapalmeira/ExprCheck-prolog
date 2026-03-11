@@ -106,7 +106,7 @@ cd ExprCheck
 
 ### Usage
 
-The system uses **SWI-Prolog**. For the modules to load correctly, execution must start from the `src` folder.
+The system uses **SWI-Prolog**. To use the project, execution must start from the project's root.
 
 The project provides two execution modes:
 
@@ -116,7 +116,7 @@ Allows expressions to be validated manually through the interactive menu.
 Load the main project file:
 
 ```bash
-swipl main.pl
+swipl src/main.pl
 ```
 
 The interactive menu will start. Follow the prompts on the screen to validate the expressions:
@@ -129,8 +129,17 @@ A) Léxico
 B) Sintático
 Escolha (A/B): B
 ```
+
 **2. Test Mode**  
-It is also possible to run the automated project tests, located in the test folder.
+It is also possible to run the automated project tests.
+
+**Execute all commands within the project's root**
+
+Run all tests with the command:
+
+```bash
+swipl -g "run_all_tests, halt" test/run_all_tests.pl
+```
 
 Run the parser tests with the command:
 
@@ -141,13 +150,7 @@ swipl -g "run_parser_tests, halt" test/parser_tests.pl
 Run the lexer tests with the command:
 
 ```bash
-swipl -g "run_parser_tests, halt" test/lexer_tests.pl
-```
-
-Run all tests with the command:
-
-```bash
-swipl -g "run_all_tests, halt" test/run_all_tests.pl
+swipl -g "run_lexer_tests, halt" test/lexer_tests.pl
 ```
 
 ---

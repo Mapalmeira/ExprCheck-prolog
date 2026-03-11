@@ -106,7 +106,7 @@ cd ExprCheck
 
 ### Utilização
 
-O sistema utiliza o **SWI-Prolog**. Para que os módulos sejam carregados corretamente, a execução deve partir da pasta `src`.
+O sistema utiliza o **SWI-Prolog**. Para executar o projeto corretamente, a execução deve partir da raiz do projeto.
 
 O projeto oferece dois modos de execução:
 
@@ -116,7 +116,7 @@ Permite validar expressões manualmente através do menu interativo.
 Carregue o arquivo principal do projeto:
 
 ```bash
-swipl main.pl
+swipl src/main.pl
 ```
 
 O menu interativo será iniciado. Siga os prompts na tela para validar as expressões:
@@ -132,9 +132,15 @@ Escolha (A/B): B
 
 **2. Modo de Testes**
 
-Também é possível executar os **testes automatizados do projeto**, presentes na pasta `test`.
+Também é possível executar os testes automatizados do projeto*
 
 **Execute todos os comandos a partir da raiz do projeto.**
+
+Execute todos os testes com um único comando:
+
+```bash
+swipl -g "run_all_tests, halt" test/run_all_tests.pl
+```
 
 Execute os testes do parser com o comando:
 
@@ -145,13 +151,7 @@ swipl -g "run_parser_tests, halt" test/parser_tests.pl
 Execute os testes do lexer com o comando:
 
 ```bash
-swipl -g "run_parser_tests, halt" test/lexer_tests.pl
-```
-
-Execute todos os testes com um único comando:
-
-```bash
-swipl -g "run_all_tests, halt" test/run_all_tests.pl
+swipl -g "run_lexer_tests, halt" test/lexer_tests.pl
 ```
 
 ---
@@ -163,5 +163,3 @@ swipl -g "run_all_tests, halt" test/run_all_tests.pl
 - [Isadora Beatriz Lucena de Medeiros](https://github.com/isadoralucena)
 - [João Henrique Silva Lima](https://github.com/limajoaohs)
 - [Matheus Palmeira Leite Rocha](https://github.com/Mapalmeira)
-
-
